@@ -1,0 +1,569 @@
+{
+	"info": {
+		"_postman_id": "952b938c-6a3b-4049-861f-eea4a5f3eecf",
+		"name": "News App API's",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33796007"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/hello",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/hello",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"hello"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE-NEWS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"title\":\"Telangana Health dept issues advisory to avoid infections and diseases during monsoon\", \r\n\"content\" :\"In response to the Indian Meteorological Department’s (IMD) forecast of light to moderate rains or thundershowers across Telangana, the State Health Department has issued a list of precautionary measures to combat the spread of viral infections, mosquito-borne, food, and water-borne diseases.The advisory suggests applying mosquito repellents before going outdoors during dusk and dawn. Those with allergies should avoid applying repellents on their hands, mouth, and eyes, and exercise caution when using chemical repellents on children. To prevent mosquito breeding, maintain drains to avoid water stagnation and cover septic tanks with a mesh. The advisory also promotes the ‘Friday Dryday’ initiative, urging residents to eliminate stagnant water from flower pots, cans, tyres, buckets, and coolers every week.\", \r\n\"category\":\"Health\",\r\n \"image\" :\"https://th-i.thgim.com/public/incoming/g341zt/article68075043.ece/alternates/LANDSCAPE_1200/DSC_0553.JPG\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/news/create-news",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"news",
+						"create-news"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "CREATE-NEWS",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjY0ZjE2MGUwZWI3NDdmODIxMmNmYmM4In0sImlhdCI6MTcxNjQ4NjM3MywiZXhwIjoxNzE2NTcyNzczfQ.D-aU4X_vzBxp8Hygu57SaA1dP7gjJkGIqiT4SL4kxZY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"title\":\"Andra Pradesh Health dept issues advisory to avoid infections and diseases during monsoon\", \r\n\"content\" :\"In response to the Indian Meteorological Department’s (IMD) forecast of light to moderate rains or thundershowers across Telangana, the State Health Department has issued a list of precautionary measures to combat the spread of viral infections, mosquito-borne, food, and water-borne diseases.The advisory suggests applying mosquito repellents before going outdoors during dusk and dawn. Those with allergies should avoid applying repellents on their hands, mouth, and eyes, and exercise caution when using chemical repellents on children. To prevent mosquito breeding, maintain drains to avoid water stagnation and cover septic tanks with a mesh. The advisory also promotes the ‘Friday Dryday’ initiative, urging residents to eliminate stagnant water from flower pots, cans, tyres, buckets, and coolers every week.\", \r\n\"category\":\"Health\",\r\n \"image\" :\"https://th-i.thgim.com/public/incoming/g341zt/article68075043.ece/alternates/LANDSCAPE_1200/DSC_0553.JPG\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/news/create-news",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"news",
+								"create-news"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1236"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"4d4-yS3PWF8NR9iRRQdpTHAgd1IYA3k\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 23 May 2024 17:46:56 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"News created successfully\",\n    \"news\": {\n        \"title\": \"Andra Pradesh Health dept issues advisory to avoid infections and diseases during monsoon\",\n        \"content\": \"In response to the Indian Meteorological Department’s (IMD) forecast of light to moderate rains or thundershowers across Telangana, the State Health Department has issued a list of precautionary measures to combat the spread of viral infections, mosquito-borne, food, and water-borne diseases.The advisory suggests applying mosquito repellents before going outdoors during dusk and dawn. Those with allergies should avoid applying repellents on their hands, mouth, and eyes, and exercise caution when using chemical repellents on children. To prevent mosquito breeding, maintain drains to avoid water stagnation and cover septic tanks with a mesh. The advisory also promotes the ‘Friday Dryday’ initiative, urging residents to eliminate stagnant water from flower pots, cans, tyres, buckets, and coolers every week.\",\n        \"category\": \"Health\",\n        \"image\": \"https://th-i.thgim.com/public/incoming/g341zt/article68075043.ece/alternates/LANDSCAPE_1200/DSC_0553.JPG\",\n        \"_id\": \"664f811014cf3eb450453035\",\n        \"createdAt\": \"2024-05-23T17:46:56.358Z\",\n        \"updatedAt\": \"2024-05-23T17:46:56.358Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "GET-NEWS",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "GET-NEWS",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjY0ZjE2MGUwZWI3NDdmODIxMmNmYmM4In0sImlhdCI6MTcxNjQ4NjM3MywiZXhwIjoxNzE2NTcyNzczfQ.D-aU4X_vzBxp8Hygu57SaA1dP7gjJkGIqiT4SL4kxZY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/news/get-news",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"news",
+								"get-news"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "5980"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"175c-DNM0wjvBLgD8q+hMrJ5OOxgU6lc\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 23 May 2024 17:49:06 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Success\",\n    \"news\": [\n        {\n            \"_id\": \"664f165b0eb747f8212cfbcb\",\n            \"title\": \"Andra Pradesh Health dept issues advisory to avoid infections and diseases during monsoon\",\n            \"content\": \"In response to the Indian Meteorological Department’s (IMD) forecast of light to moderate rains or thundershowers across Telangana, the State Health Department has issued a list of precautionary measures to combat the spread of viral infections, mosquito-borne, food, and water-borne diseases.The advisory suggests applying mosquito repellents before going outdoors during dusk and dawn. Those with allergies should avoid applying repellents on their hands, mouth, and eyes, and exercise caution when using chemical repellents on children. To prevent mosquito breeding, maintain drains to avoid water stagnation and cover septic tanks with a mesh. The advisory also promotes the ‘Friday Dryday’ initiative, urging residents to eliminate stagnant water from flower pots, cans, tyres, buckets, and coolers every week.\",\n            \"category\": \"Health\",\n            \"image\": \"https://th-i.thgim.com/public/incoming/g341zt/article68075043.ece/alternates/LANDSCAPE_1200/DSC_0553.JPG\",\n            \"createdAt\": \"2024-05-23T10:11:39.491Z\",\n            \"updatedAt\": \"2024-05-23T10:11:39.491Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"664f6fb3c4ed51e92140275c\",\n            \"title\": \"Andra Pradesh Health dept issues advisory to avoid infections and diseases during monsoon\",\n            \"content\": \"In response to the Indian Meteorological Department’s (IMD) forecast of light to moderate rains or thundershowers across Telangana, the State Health Department has issued a list of precautionary measures to combat the spread of viral infections, mosquito-borne, food, and water-borne diseases.The advisory suggests applying mosquito repellents before going outdoors during dusk and dawn. Those with allergies should avoid applying repellents on their hands, mouth, and eyes, and exercise caution when using chemical repellents on children. To prevent mosquito breeding, maintain drains to avoid water stagnation and cover septic tanks with a mesh. The advisory also promotes the ‘Friday Dryday’ initiative, urging residents to eliminate stagnant water from flower pots, cans, tyres, buckets, and coolers every week.\",\n            \"category\": \"Health\",\n            \"image\": \"https://th-i.thgim.com/public/incoming/g341zt/article68075043.ece/alternates/LANDSCAPE_1200/DSC_0553.JPG\",\n            \"createdAt\": \"2024-05-23T16:32:51.273Z\",\n            \"updatedAt\": \"2024-05-23T16:32:51.273Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"664f7c81992372473c8be27b\",\n            \"title\": \"Andra Pradesh Health dept issues advisory to avoid infections and diseases during monsoon\",\n            \"content\": \"In response to the Indian Meteorological Department’s (IMD) forecast of light to moderate rains or thundershowers across Telangana, the State Health Department has issued a list of precautionary measures to combat the spread of viral infections, mosquito-borne, food, and water-borne diseases.The advisory suggests applying mosquito repellents before going outdoors during dusk and dawn. Those with allergies should avoid applying repellents on their hands, mouth, and eyes, and exercise caution when using chemical repellents on children. To prevent mosquito breeding, maintain drains to avoid water stagnation and cover septic tanks with a mesh. The advisory also promotes the ‘Friday Dryday’ initiative, urging residents to eliminate stagnant water from flower pots, cans, tyres, buckets, and coolers every week.\",\n            \"category\": \"Health\",\n            \"image\": \"https://th-i.thgim.com/public/incoming/g341zt/article68075043.ece/alternates/LANDSCAPE_1200/DSC_0553.JPG\",\n            \"createdAt\": \"2024-05-23T17:27:29.272Z\",\n            \"updatedAt\": \"2024-05-23T17:27:29.272Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"664f811014cf3eb450453035\",\n            \"title\": \"Andra Pradesh Health dept issues advisory to avoid infections and diseases during monsoon\",\n            \"content\": \"In response to the Indian Meteorological Department’s (IMD) forecast of light to moderate rains or thundershowers across Telangana, the State Health Department has issued a list of precautionary measures to combat the spread of viral infections, mosquito-borne, food, and water-borne diseases.The advisory suggests applying mosquito repellents before going outdoors during dusk and dawn. Those with allergies should avoid applying repellents on their hands, mouth, and eyes, and exercise caution when using chemical repellents on children. To prevent mosquito breeding, maintain drains to avoid water stagnation and cover septic tanks with a mesh. The advisory also promotes the ‘Friday Dryday’ initiative, urging residents to eliminate stagnant water from flower pots, cans, tyres, buckets, and coolers every week.\",\n            \"category\": \"Health\",\n            \"image\": \"https://th-i.thgim.com/public/incoming/g341zt/article68075043.ece/alternates/LANDSCAPE_1200/DSC_0553.JPG\",\n            \"createdAt\": \"2024-05-23T17:46:56.358Z\",\n            \"updatedAt\": \"2024-05-23T17:46:56.358Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"664f817014cf3eb450453037\",\n            \"title\": \"Andra Pradesh Health dept issues advisory to avoid infections and diseases during monsoon\",\n            \"content\": \"In response to the Indian Meteorological Department’s (IMD) forecast of light to moderate rains or thundershowers across Telangana, the State Health Department has issued a list of precautionary measures to combat the spread of viral infections, mosquito-borne, food, and water-borne diseases.The advisory suggests applying mosquito repellents before going outdoors during dusk and dawn. Those with allergies should avoid applying repellents on their hands, mouth, and eyes, and exercise caution when using chemical repellents on children. To prevent mosquito breeding, maintain drains to avoid water stagnation and cover septic tanks with a mesh. The advisory also promotes the ‘Friday Dryday’ initiative, urging residents to eliminate stagnant water from flower pots, cans, tyres, buckets, and coolers every week.\",\n            \"category\": \"Health\",\n            \"image\": \"https://th-i.thgim.com/public/incoming/g341zt/article68075043.ece/alternates/LANDSCAPE_1200/DSC_0553.JPG\",\n            \"createdAt\": \"2024-05-23T17:48:32.204Z\",\n            \"updatedAt\": \"2024-05-23T17:48:32.204Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/top-headlines?country=us&apiKey=0d5e2b7b5ac9467cafb40b07e96e9acb&category=health",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"top-headlines"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "us"
+						},
+						{
+							"key": "apiKey",
+							"value": "0d5e2b7b5ac9467cafb40b07e96e9acb"
+						},
+						{
+							"key": "category",
+							"value": "health"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "REGISTER",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"vani+2@gmail.com\",\r\n    \"password\" :\"vani\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/user/create-user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"create-user"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "28"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1c-r60HQ0fsZf6c4b+FMmc2Yj1mims\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 23 May 2024 17:51:33 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "User registered successfully"
+				}
+			]
+		},
+		{
+			"name": "LOGIN",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjY0ZTJjNjE2YWY1OTY2NzMyZmQwYjZmIn0sImlhdCI6MTcxNjM5OTk1MSwiZXhwIjoxNzE5OTk5OTUxfQ.J8J1KY6grCKRPoCwVU6_S745wf8sLntKvOpE5sd8qsc",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"vani+1@gmail.com\",\r\n    \"password\" :\"vani\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/user/get-user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"get-user"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "LOGIN",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjY0ZTJjNjE2YWY1OTY2NzMyZmQwYjZmIn0sImlhdCI6MTcxNjM5OTk1MSwiZXhwIjoxNzE5OTk5OTUxfQ.J8J1KY6grCKRPoCwVU6_S745wf8sLntKvOpE5sd8qsc",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"vani+1@gmail.com\",\r\n    \"password\" :\"vani\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/user/get-user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"get-user"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "195"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c3-bKBjwWe8TH9P2EoT3qh6eFIr3NU\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 23 May 2024 17:46:13 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjY0ZjE2MGUwZWI3NDdmODIxMmNmYmM4In0sImlhdCI6MTcxNjQ4NjM3MywiZXhwIjoxNzE2NTcyNzczfQ.D-aU4X_vzBxp8Hygu57SaA1dP7gjJkGIqiT4SL4kxZY\"\n}"
+				}
+			]
+		},
+		{
+			"name": "GET-NEWS-BY-ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/news/get-news/664e2fb13c7e337e00d240de",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"news",
+						"get-news",
+						"664e2fb13c7e337e00d240de"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE-BY-ID",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjY0ZTJjNjE2YWY1OTY2NzMyZmQwYjZmIn0sImlhdCI6MTcxNjQwMDYwNywiZXhwIjoxNzIwMDAwNjA3fQ.juhMpxQpuRLe1QrzucSxuTJSZoiGaRQwbKkDn5Hp16Q",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/news/delete-news/664e2fbc3c7e337e00d240e0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"news",
+						"delete-news",
+						"664e2fbc3c7e337e00d240e0"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "DELETE-BY-ID",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjY0ZjE2MGUwZWI3NDdmODIxMmNmYmM4In0sImlhdCI6MTcxNjQ4NjM3MywiZXhwIjoxNzE2NTcyNzczfQ.D-aU4X_vzBxp8Hygu57SaA1dP7gjJkGIqiT4SL4kxZY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/news/delete-news/664f165b0eb747f8212cfbcb",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"news",
+								"delete-news",
+								"664f165b0eb747f8212cfbcb"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "39"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"27-TOv7KvQbiSJmhCJQYuQaZZqQdWE\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 23 May 2024 17:51:14 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"News deleted successfully\"\n}"
+				}
+			]
+		}
+	]
+}
